@@ -43,7 +43,17 @@
         android:textColor="#ffffff"
         android:padding="20dp"/>
 
-    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#0000ff"
+        android:gravity="center"
+        android:text="is"
+        android:textColor="#ffffff"/>
+
+
+
 
 
 </LinearLayout>
