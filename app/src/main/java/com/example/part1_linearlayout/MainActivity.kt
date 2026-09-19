@@ -24,5 +24,16 @@ class MainActivity : AppCompatActivity() {
         btnCancel = findViewById<Button>(R.id.btn_cancel)
         tvBlackText = findViewById<TextView>(R.id.tv_black_text)
 
+
+        btnChange.setOnClickListener {
+            tvBlackText.text = "Text Changed!"
+            tvBlackText.setTextColor(android.graphics.Color.GREEN)
+        }
+
+        // ========== 新增：Cancel按钮点击监听 ==========
+        btnCancel.setOnClickListener {
+            tvBlackText.text = "Android Application"
+            tvBlackText.setTextColor(android.graphics.Color.WHITE)
+        }
         }
     }
