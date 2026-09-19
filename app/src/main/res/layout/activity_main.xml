@@ -75,6 +75,7 @@
     </LinearLayout>
 
     <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -83,6 +84,7 @@
             android:background="#000000">
 
             <TextView
+                android:id="@+id/tv_black_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Android Application"
@@ -98,11 +100,13 @@
         android:gravity="center"
         android:background="#ffffff">
         <Button
+            android:id="@+id/btn_change"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Change"
             android:layout_marginEnd="16dp"/>
         <Button
+            android:id="@+id/btn_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel"/>

@@ -5,8 +5,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        setContentView(R.layout.activity_constraint)
+        setContentView(R.layout.activity_main)
 
         btnChange = findViewById<Button>(R.id.btn_change)
         btnCancel = findViewById<Button>(R.id.btn_cancel)
@@ -30,7 +29,6 @@ class MainActivity : AppCompatActivity() {
             tvBlackText.setTextColor(android.graphics.Color.GREEN)
         }
 
-        // ========== 新增：Cancel按钮点击监听 ==========
         btnCancel.setOnClickListener {
             tvBlackText.text = "Android Application"
             tvBlackText.setTextColor(android.graphics.Color.WHITE)
